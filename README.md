@@ -81,7 +81,36 @@ curl -X POST https:/service.northinfosec.com/api \
     "cveid": ["CVE-2024-38440", "CVE-2024-37334"]
 }'
 ```
+Example Python3 Request
 
+```
+import requests
+
+# API endpoint
+url = "https:/service.northinfosec.com/api"
+
+# Headers including the API token
+headers = {
+    "Content-Type": "application/json",
+    "token": "YOUR_API_KEY_HERE"  # Replace with your actual API key
+}
+
+# JSON payload containing the list of CVE IDs
+data = {
+    "cveid": ["CVE-2024-38440", "CVE-2023-12345"]
+}
+
+# Making the POST request
+response = requests.post(url, headers=headers, json=data)
+
+# Checking the response status and printing the result
+if response.status_code == 200:
+    print("Success:")
+    print(response.json())  # Printing the response JSON
+else:
+    print(f"Error: {response.status_code}")
+    print(response.text)  # Printing the error message if the request failed
+```
 
 
 
