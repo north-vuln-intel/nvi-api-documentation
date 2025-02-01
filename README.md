@@ -6,7 +6,7 @@ This API allows users to retrieve vulnerability intelligence information from NV
 
 Endpoint
 
-URL https:/service.northinfosec.com
+URL https://service.northinfosec.com
 
 POST /api/
 
