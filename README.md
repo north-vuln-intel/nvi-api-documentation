@@ -2,7 +2,7 @@
 API documentation to access NVI Vulnerability Intelligence
 
 
-This API allows users to retrieve vulnerability intelligence information from NVI platform. https://ww.northinfosec.com
+This API allows users to retrieve vulnerability intelligence information from NVI platform. https://www.northinfosec.com
 
 Endpoint
 
